@@ -21,7 +21,7 @@ script:
 
 deploy:
   skip_cleanup: true
-  github-token: $personalAccessTokens  # Set in the settings page of your repository, as a secure variable
+  github-token: ${personalAccessTokens}  # Set in the settings page of your repository, as a secure variable
   keep-history: true
   on:
     branch: master
