@@ -13,13 +13,14 @@ before_install:
 
 install:
   - npm install
-  # - cd ./themes/indigo/
-  # - npm install
+  - cd ./themes/indigo/
+  - npm install
 
 script:
   - hexo generate
 
 deploy:
+  provider: pages
   skip_cleanup: true
   github-token: $personalAccessTokens  # Set in the settings page of your repository, as a secure variable
   keep-history: true
