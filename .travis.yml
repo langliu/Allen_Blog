@@ -15,6 +15,7 @@ install:
   - npm install
   - cd ./themes/indigo1/
   - npm install
+  - cd ../../
 
 script:
   - hexo generate
